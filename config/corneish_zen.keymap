@@ -57,9 +57,9 @@
 
         nav {
             bindings = <
-&kp LC(TAB)  &kp LC(Q)  &kp LC(W)  &kp LC(E)         &kp LC(R)  &kp LC(T)       &none      &none      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LC(P)  &none
-&none        &kp LC(A)  &kp LC(S)  &kp LC(D)         &kp LC(F)  &kp LC(G)       &kp LEFT   &kp DOWN   &kp UP          &kp RIGHT        &none      &none
-&kp LSHFT    &kp LC(Z)  &kp LC(X)  &kp LC(C)         &kp LC(V)  &kp LC(B)       &kp LC(N)  &kp LC(M)  &none           &none            &none      &kp RIGHT_SHIFT
+&kp LC(TAB)  &kp LC(Q)  &kp LC(W)  &kp LC(E)         &kp LC(R)  &kp LC(T)       &none      &kp HOME   &kp END   &none      &kp LC(P)  &none
+&none        &kp LC(A)  &kp LC(S)  &kp LC(D)         &kp LC(F)  &kp LC(G)       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &none      &none
+&kp LSHFT    &kp LC(Z)  &kp LC(X)  &kp LC(C)         &kp LC(V)  &kp LC(B)       &kp LC(N)  &kp LC(M)  &none     &none      &none      &kp RIGHT_SHIFT
                                    &kp LEFT_CONTROL  &none      &kp LEFT_GUI    &kp ENTER  &kp SPACE  &kp RGUI
             >;
 
