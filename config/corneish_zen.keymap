@@ -31,10 +31,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LEFT_ALT ESCAPE   &kp Q  &kp W  &kp E         &kp R  &kp T       &kp Y      &kp U  &kp I           &kp O    &kp P     &kp GRAVE
-&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D         &kp F  &kp G       &kp H      &kp J  &kp K           &kp L    &kp SEMI  &kp SQT
-&kp LSHFT             &kp Z  &kp X  &kp C         &kp V  &kp B       &kp N      &kp M  &kp COMMA       &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                    &kp LEFT_GUI  &mo 1  &kp BSPC    &kp SPACE  &mo 2  &mt RGUI ENTER
+&mt LEFT_ALT ESCAPE   &kp Q  &kp W  &kp E         &kp R  &kp T              &kp Y        &kp U      &kp I      &kp O    &kp P     &kp GRAVE
+&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D         &kp F  &kp G              &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT             &kp Z  &kp X  &kp C         &kp V  &kp B              &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                                    &kp LEFT_GUI  &mo 1  &lt 2 BACKSPACE    &lt 2 ENTER  &kp SPACE  &kp RGUI
             >;
         };
 
@@ -51,16 +51,16 @@
 &kp LEFT_ALT      &none      &kp AT           &kp HASH      &kp DOLLAR  &kp CARET        &none      &kp AMPERSAND   &kp LBRC              &kp RIGHT_BRACE        &kp PIPE      &kp N0
 &kp LEFT_CONTROL  &none      &kp EXCLAMATION  &kp LBKT      &kp RBKT    &kp PERCENT      &kp STAR   &kp EQUAL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &kp DOUBLE_QUOTES
 &kp LEFT_SHIFT    &kp LG(Z)  &kp LG(X)        &kp LG(C)     &kp LG(V)   &kp BACKSLASH    &kp PLUS   &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
-                                              &kp LEFT_GUI  &none       &mo 3            &kp SPACE  &kp UNDERSCORE  &kp RIGHT_GUI
+                                              &kp LEFT_GUI  &none       &mo 3            &kp ENTER  &kp UNDERSCORE  &kp RIGHT_GUI
             >;
         };
 
         nav {
             bindings = <
-&kp LEFT_ALT      &none  &kp N1  &kp N2        &kp N3  &none            &none      &none     &kp HOME              &kp END    &none  &kp N0
-&kp LEFT_CONTROL  &none  &kp N4  &kp N5        &kp N6  &none            &kp LEFT   &kp DOWN  &kp UP                &kp RIGHT  &none  &kp ENTER
-&kp LSHFT         &none  &kp N7  &kp N8        &kp N9  &none            &none      &none     &sk LC(LS(LEFT_ALT))  &none      &none  &kp RIGHT_SHIFT
-                                 &kp LEFT_GUI  &kp N0  &kp BACKSPACE    &kp SPACE  &none     &kp RGUI
+&kp LEFT_ALT      &none  &kp N1  &kp N2        &kp N3  &none            &none     &none     &kp HOME              &kp END    &none  &kp N0
+&kp LEFT_CONTROL  &none  &kp N4  &kp N5        &kp N6  &none            &kp LEFT  &kp DOWN  &kp UP                &kp RIGHT  &none  &none
+&kp LSHFT         &none  &kp N7  &kp N8        &kp N9  &none            &none     &none     &sk LC(LS(LEFT_ALT))  &none      &none  &kp RIGHT_SHIFT
+                                 &kp LEFT_GUI  &kp N0  &kp BACKSPACE    &none     &none     &kp RGUI
             >;
 
             label = "NAV";
