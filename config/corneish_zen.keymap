@@ -19,37 +19,37 @@
 
 / {
     behaviors {
-        k_left_mm: k_left_mm {
+        J_left: J_left {
             compatible = "zmk,behavior-mod-morph";
-            label = "K_LEFT_MM";
-            bindings = <&kp K>, <&kp LEFT>;
+            label = "J_LEFT";
+            bindings = <&kp J>, <&kp LEFT>;
 
             #binding-cells = <0>;
             mods = <(MOD_RGUI)>;
         };
 
-        l_down_mm: l_down_mm {
+        K_down: K_down {
             compatible = "zmk,behavior-mod-morph";
-            label = "L_DOWN_MM";
-            bindings = <&kp L>, <&kp DOWN>;
+            label = "K_DOWN";
+            bindings = <&kp K>, <&kp DOWN>;
 
             #binding-cells = <0>;
             mods = <(MOD_RGUI)>;
         };
 
-        semi_right_mm: semi_right_mm {
+        L_right: L_right {
             compatible = "zmk,behavior-mod-morph";
-            label = "SEMI_RIGHT_MM";
-            bindings = <&kp SEMICOLON>, <&kp RIGHT>;
+            label = "L_RIGHT";
+            bindings = <&kp L>, <&kp RIGHT>;
 
             #binding-cells = <0>;
             mods = <(MOD_RGUI)>;
         };
 
-        o_up_mm: o_up_mm {
+        I_up: I_up {
             compatible = "zmk,behavior-mod-morph";
-            label = "O_UP_MM";
-            bindings = <&kp O>, <&kp UP>;
+            label = "I_UP";
+            bindings = <&kp I>, <&kp UP>;
 
             #binding-cells = <0>;
             mods = <(MOD_RGUI)>;
@@ -69,10 +69,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LEFT_ALT ESCAPE   &kp Q  &kp W  &kp E         &kp R      &kp T            &kp Y      &kp U      &kp I       &o_up_mm    &kp P           &kp GRAVE
-&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D         &kp F      &kp G            &kp H      &kp J      &k_left_mm  &l_down_mm  &semi_right_mm  &kp SINGLE_QUOTE
-&kp LSHFT             &kp Z  &kp X  &kp C         &kp V      &kp B            &kp N      &kp M      &kp COMMA   &kp DOT     &kp FSLH        &kp RIGHT_SHIFT
-                                    &kp LEFT_GUI  &lt 1 TAB  &kp BACKSPACE    &kp ENTER  &kp SPACE  &kp RGUI
+&mt LEFT_ALT ESCAPE   &kp Q  &kp W  &kp E         &kp R  &kp T            &kp Y      &kp U      &I_up      &kp O     &kp P          &kp GRAVE
+&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D         &kp F  &kp G            &kp H      &J_left    &K_down    &L_right  &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LSHFT             &kp Z  &kp X  &kp C         &kp V  &kp B            &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
+                                    &kp LEFT_GUI  &mo 1  &kp BACKSPACE    &kp ENTER  &kp SPACE  &kp RGUI
             >;
         };
 
