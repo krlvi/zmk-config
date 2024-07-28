@@ -59,7 +59,7 @@
             bindings = <
 &kp LEFT_ALT      &kp AT_SIGN  &kp EXCLAMATION  &kp UP                &kp PIPE   &kp HASH       &kp DOLLAR  &kp AMPERSAND  &kp LBRC              &kp RIGHT_BRACE        &kp LBKT      &mt RIGHT_ALT RIGHT_BRACKET
 &kp LEFT_CONTROL  &kp N0       &kp LEFT         &kp DOWN              &kp RIGHT  &kp PERCENT    &kp STAR    &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &kp DOUBLE_QUOTES
-&kp LEFT_SHIFT    &kp BSLH     &none            &kp LC(LS(LEFT_ALT))  &none      &kp CARET      &kp PLUS    &kp MINUS      &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &kp BSLH     &none            &sk LC(LS(LEFT_ALT))  &none      &kp CARET      &kp PLUS    &kp MINUS      &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
                                                 &kp LEFT_GUI          &none      &mo 3          &kp UNDER   &kp SPACE      &kp RIGHT_GUI
             >;
 
