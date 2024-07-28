@@ -19,13 +19,6 @@
 
 / {
     behaviors {
-        RGUI_NUM: RGUI_NUM {
-            compatible = "zmk,behavior-tap-dance";
-            label = "RGUI_NUM";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_GUI>, <&tog 2>;
-        };
-
         L1_L2: L1_L2 {
             compatible = "zmk,behavior-tap-dance";
             label = "L1_L2";
