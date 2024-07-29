@@ -158,9 +158,9 @@
 
         NUMBER {
             bindings = <
-&tog 2                &none  &none     &kp UP        &none      &none            &none   &kp N1     &kp N2         &kp N3  &none  &kp RIGHT_ALT
-&mt LEFT_CONTROL TAB  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none            &none   &kp N4     &kp N5         &kp N6  &none  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT        &none  &none     &none         &none      &none            &none   &kp N7     &kp N8         &kp N9  &none  &kp RIGHT_SHIFT
+&tog 2                &none  &none     &kp UP        &none      &none            &none   &kp N1     &kp N2         &kp N3  &none   &kp RIGHT_ALT
+&mt LEFT_CONTROL TAB  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none            &none   &kp N4     &kp N5         &kp N6  &none   &kp RIGHT_CONTROL
+&kp LEFT_SHIFT        &none  &none     &none         &none      &none            &none   &kp N7     &kp N8         &kp N9  &kp N0  &kp RIGHT_SHIFT
                                        &kp LEFT_GUI  &tog 2     &kp BACKSPACE    &kp N0  &kp SPACE  &kp RIGHT_GUI
             >;
 
