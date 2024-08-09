@@ -26,94 +26,40 @@
             bindings = <&mo 1>, <&tog 2>;
         };
 
-        U1: U1 {
+        H_left: H_left {
             compatible = "zmk,behavior-mod-morph";
-            label = "U1";
-            bindings = <&kp U>, <&kp N1>;
+            label = "H_LEFT";
+            bindings = <&kp H>, <&kp LEFT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
         };
 
-        I2: I2 {
+        J_down: J_down {
             compatible = "zmk,behavior-mod-morph";
-            label = "I2";
-            bindings = <&kp I>, <&kp N2>;
+            label = "J_DOWN";
+            bindings = <&kp J>, <&kp DOWN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
         };
 
-        J4: J4 {
+        K_up: K_up {
             compatible = "zmk,behavior-mod-morph";
-            label = "J4";
-            bindings = <&kp J>, <&kp N4>;
+            label = "K_UP";
+            bindings = <&kp K>, <&kp UP>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
         };
 
-        K5: K5 {
+        L_right: L_right {
             compatible = "zmk,behavior-mod-morph";
-            label = "K5";
-            bindings = <&kp K>, <&kp N5>;
+            label = "L_RIGHT";
+            bindings = <&kp L>, <&kp RIGHT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        L6: L6 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "L6";
-            bindings = <&kp L>, <&kp N6>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        M7: M7 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "M7";
-            bindings = <&kp M>, <&kp N7>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        Comma8: Comma8 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA8";
-            bindings = <&kp COMMA>, <&kp N8>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        Dot9: Dot9 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT9";
-            bindings = <&kp PERIOD>, <&kp N9>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        Slash0: Slash0 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SLASH0";
-            bindings = <&kp SLASH>, <&kp N0>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        O3: O3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "O3";
-            bindings = <&kp O>, <&kp N3>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
@@ -130,10 +76,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LC(LS(LEFT_ALT)) ESCAPE  &kp Q  &kp W  &kp E         &kp R   &kp T            &kp Y      &U1        &I2            &O3    &kp P          &mt RIGHT_ALT GRAVE
-&mt LEFT_CONTROL TAB         &kp A  &kp S  &kp D         &kp F   &kp G            &kp H      &J4        &K5            &L6    &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LSHFT                    &kp Z  &kp X  &kp C         &kp V   &kp B            &kp N      &M7        &Comma8        &Dot9  &Slash0        &kp RIGHT_SHIFT
-                                           &kp LEFT_GUI  &L1_L2  &kp BACKSPACE    &kp ENTER  &kp SPACE  &kp RIGHT_GUI
+&lt 2 ESCAPE          &kp Q  &kp W  &kp E         &kp R  &kp T            &kp Y      &kp U      &kp I          &kp O     &kp P          &mt RIGHT_ALT GRAVE
+&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D         &kp F  &kp G            &H_left    &J_down    &K_up          &L_right  &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LSHFT             &kp Z  &kp X  &kp C         &kp V  &kp B            &kp N      &kp M      &kp COMMA      &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
+                                    &kp LEFT_GUI  &mo 1  &kp BACKSPACE    &kp ENTER  &kp SPACE  &kp RIGHT_GUI
             >;
         };
 
@@ -158,10 +104,10 @@
 
         NUMBER {
             bindings = <
-&tog 2                &none  &none     &kp UP        &none      &none            &none      &kp N1     &kp N2         &kp N3  &none   &kp RIGHT_ALT
-&mt LEFT_CONTROL TAB  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none            &none      &kp N4     &kp N5         &kp N6  &none   &kp RIGHT_CONTROL
-&kp LEFT_SHIFT        &none  &none     &none         &none      &none            &none      &kp N7     &kp N8         &kp N9  &kp N0  &kp RIGHT_SHIFT
-                                       &kp LEFT_GUI  &tog 2     &kp BACKSPACE    &kp ENTER  &kp SPACE  &kp RIGHT_GUI
+&none                 &none  &none  &none         &kp LG(LS(N4))  &none            &none      &kp N1     &kp N2         &kp N3  &none   &kp RIGHT_ALT
+&mt LEFT_CONTROL TAB  &none  &none  &none         &none           &none            &none      &kp N4     &kp N5         &kp N6  &none   &kp RIGHT_CONTROL
+&kp LEFT_SHIFT        &none  &none  &none         &none           &none            &none      &kp N7     &kp N8         &kp N9  &kp N0  &kp RIGHT_SHIFT
+                                    &kp LEFT_GUI  &none           &kp BACKSPACE    &kp ENTER  &kp SPACE  &kp RIGHT_GUI
             >;
 
             label = "NUM";
