@@ -61,10 +61,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W            &kp E                &kp R            &kp T            &kp Y      &kp U             &kp I                 &kp O             &kp P          &kp GRAVE
-&kp TAB     &kp A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_GUI F  &kp G            &kp H      &hmr RIGHT_GUI J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LSHFT   &kp Z  &kp X            &kp C                &kp V            &kp B            &kp N      &kp M             &kp COMMA             &kp DOT           &kp FSLH       &kp RIGHT_SHIFT
-                                    &mo 2                &mo 1            &kp BACKSPACE    &kp ENTER  &kp SPACE         &mo 1
+&kp ESCAPE             &kp Q  &kp W  &kp E  &kp R            &kp T            &kp Y      &kp U             &kp I      &kp O    &kp P          &hmr RIGHT_ALT GRAVE
+&hml LEFT_CONTROL TAB  &kp A  &kp S  &kp D  &kp F            &kp G            &kp H      &kp J             &kp K      &kp L    &kp SEMICOLON  &hmr RIGHT_CONTROL SINGLE_QUOTE
+&kp LSHFT              &kp Z  &kp X  &kp C  &hml LEFT_GUI V  &kp B            &kp N      &hmr RIGHT_GUI M  &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                                     &mo 2  &mo 1            &kp BACKSPACE    &kp ENTER  &kp SPACE         &mo 1
             >;
         };
 
@@ -78,10 +78,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE      &none          &kp EXCLAMATION     &kp UP                  &kp PIPE             &kp PERCENT    &kp CARET       &kp AMPERSAND         &kp LBRC                             &kp RIGHT_BRACE                   &kp LBKT      &kp RIGHT_BRACKET
-&kp TAB         &kp N0         &hml LEFT_ALT LEFT  &hml LEFT_CONTROL DOWN  &hml LEFT_GUI RIGHT  &none          &kp STAR        &hmr RIGHT_GUI EQUAL  &hmr RIGHT_CONTROL LEFT_PARENTHESIS  &hmr RIGHT_ALT RIGHT_PARENTHESIS  &kp COLON     &kp DOUBLE_QUOTES
-&kp LEFT_SHIFT  &kp BACKSLASH  &kp AT_SIGN         &kp HASH                &kp DOLLAR           &none          &kp PLUS        &kp MINUS             &kp LESS_THAN                        &kp GREATER_THAN                  &kp QUESTION  &kp RIGHT_SHIFT
-                                                   &none                   &none                &mo 4          &kp UNDERSCORE  &kp SPACE             &none
+&kp ESCAPE        &none          &kp EXCLAMATION  &kp UP    &kp PIPE              &kp PERCENT    &kp CARET       &kp AMPERSAND         &kp LBRC              &kp RIGHT_BRACE        &kp LBKT      &hmr RIGHT_ALT RIGHT_BRACKET
+&kp LEFT_CONTROL  &kp N0         &kp LEFT         &kp DOWN  &kp RIGHT             &none          &kp STAR        &kp EQUAL             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &hmr RIGHT_CONTROL DOUBLE_QUOTES
+&kp LEFT_SHIFT    &kp BACKSLASH  &kp AT_SIGN      &kp HASH  &hml LEFT_GUI DOLLAR  &none          &kp PLUS        &hmr RIGHT_GUI MINUS  &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
+                                                  &none     &none                 &mo 4          &kp UNDERSCORE  &kp SPACE             &none
             >;
 
             label = "SYM";
@@ -89,10 +89,10 @@
 
         NUMBER {
             bindings = <
-&kp ESCAPE      &none  &none         &none             &none         &none            &none      &kp N1     &kp N2  &kp N3  &none   &none
-&mo 3           &none  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &none            &none      &kp N4     &kp N5  &kp N6  &none   &none
-&kp LEFT_SHIFT  &none  &none         &none             &none         &none            &none      &kp N7     &kp N8  &kp N9  &kp N0  &kp RIGHT_SHIFT
-                                     &none             &none         &kp BACKSPACE    &kp ENTER  &kp SPACE  &none
+&mo 3              &none  &none  &none  &none         &none            &none      &kp N1     &kp N2         &kp N3  &none   &none
+&kp RIGHT_CONTROL  &none  &none  &none  &none         &none            &none      &kp N4     &kp N5         &kp N6  &none   &kp RIGHT_CONTROL
+&kp LEFT_SHIFT     &none  &none  &none  &kp LEFT_GUI  &none            &none      &kp N7     &kp N8         &kp N9  &kp N0  &kp RIGHT_SHIFT
+                                 &none  &none         &kp BACKSPACE    &kp ENTER  &kp SPACE  &kp RIGHT_GUI
             >;
 
             label = "NUM";
@@ -100,10 +100,10 @@
 
         Function {
             bindings = <
-&kp ESCAPE      &none  &none         &none             &none         &none       &none      &kp F1     &kp F2  &kp F3  &kp F12  &none
-&none           &none  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &none       &none      &kp F4     &kp F5  &kp F6  &kp F11  &none
-&sk LEFT_SHIFT  &none  &none         &none             &none         &none       &none      &kp F7     &kp F8  &kp F9  &kp F10  &kp RIGHT_SHIFT
-                                     &none             &none         &kp BSPC    &kp ENTER  &kp SPACE  &none
+&none           &none  &none  &none  &none     &none       &none      &kp F1     &kp F2  &kp F3  &kp F12  &none
+&kp LCTRL       &none  &none  &none  &none     &none       &none      &kp F4     &kp F5  &kp F6  &kp F11  &kp RIGHT_CONTROL
+&sk LEFT_SHIFT  &none  &none  &none  &kp LGUI  &none       &none      &kp F7     &kp F8  &kp F9  &kp F10  &kp RIGHT_SHIFT
+                              &none  &none     &kp BSPC    &kp ENTER  &kp SPACE  &none
             >;
 
             label = "FUNC";
