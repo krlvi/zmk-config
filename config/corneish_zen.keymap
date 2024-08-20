@@ -140,10 +140,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE        &none          &kp EXCLAMATION  &kp UP    &kp PIPE    &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp LBRC              &kp RIGHT_BRACE        &kp LBKT      &mt RIGHT_ALT RIGHT_BRACKET
-&kp LEFT_CONTROL  &kp N0         &kp LEFT         &kp DOWN  &kp RIGHT   &none          &kp STAR        &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &mt RIGHT_CONTROL DOUBLE_QUOTES
-&kp LEFT_SHIFT    &kp BACKSLASH  &kp AT_SIGN      &kp HASH  &kp DOLLAR  &none          &kp PLUS        &kp MINUS      &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
-                                                  &none     &none       &mo 4          &kp UNDERSCORE  &kp SPACE      &kp RIGHT_GUI
+&kp ESCAPE        &kp EXCL       &kp AT_SIGN  &kp UP    &kp DOLLAR  &kp HASH       &kp PIPE        &kp AMPERSAND  &kp LBRC              &kp RIGHT_BRACE        &kp LBKT      &mt RIGHT_ALT RIGHT_BRACKET
+&kp LEFT_CONTROL  &kp N0         &kp LEFT     &kp DOWN  &kp RIGHT   &kp PERCENT    &kp STAR        &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &mt RIGHT_CONTROL DOUBLE_QUOTES
+&kp LEFT_SHIFT    &kp BACKSLASH  &none        &none     &none       &kp CARET      &kp PLUS        &kp MINUS      &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
+                                              &none     &none       &mo 4          &kp UNDERSCORE  &kp SPACE      &kp RIGHT_GUI
             >;
 
             label = "SYM";
