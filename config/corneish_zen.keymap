@@ -117,24 +117,6 @@
             #binding-cells = <0>;
             mods = <(MOD_RGUI)>;
         };
-
-        a_uml: a_uml {
-            compatible = "zmk,behavior-mod-morph";
-            label = "A_UML";
-            bindings = <&a_>, <&A_>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        o_uml: o_uml {
-            compatible = "zmk,behavior-mod-morph";
-            label = "O_UML";
-            bindings = <&o_>, <&O_>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     macros {
@@ -145,24 +127,10 @@
             label = "A_";
         };
 
-        A_: A_ {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp LS(A)>;
-            label = "A_";
-        };
-
         o_: o_ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp O>;
-            label = "O_";
-        };
-
-        O_: O_ {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp LS(O)>;
             label = "O_";
         };
 
@@ -206,7 +174,7 @@
             bindings = <
 &kp LEFT_ALT      &kp EXCL       &kp AT_SIGN  &kp UP    &kp DOLLAR  &kp HASH       &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT      &mt RIGHT_ALT RIGHT_BRACKET
 &kp LEFT_CONTROL  &kp BACKSLASH  &kp LEFT     &kp DOWN  &kp RIGHT   &kp PERCENT    &kp PLUS       &kp EQUAL       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON     &mt RIGHT_CONTROL DOUBLE_QUOTES
-&kp LEFT_SHIFT    &trans         &a_uml       &o_uml    &ao         &kp CARET      &trans         &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &trans         &a_          &o_       &ao         &kp CARET      &trans         &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
                                               &none     &none       &mo 2          &kp PIPE       &kp UNDERSCORE  &kp RIGHT_GUI
             >;
 
