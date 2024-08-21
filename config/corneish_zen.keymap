@@ -100,10 +100,19 @@
             mods = <(MOD_RGUI)>;
         };
 
-        slash0: slash0 {
+        P0: P0 {
             compatible = "zmk,behavior-mod-morph";
-            label = "SLASH0";
-            bindings = <&kp SLASH>, <&kp N0>;
+            label = "P0";
+            bindings = <&kp P>, <&kp N0>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        HH: HH {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HH";
+            bindings = <&kp H>, <&kp H>;
 
             #binding-cells = <0>;
             mods = <(MOD_RGUI)>;
@@ -123,9 +132,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE            &kp Q  &kp W  &kp E         &kp R  &kp T            &kp Y      &U1        &I2            &O3    &kp P          &mt RIGHT_ALT GRAVE
-&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D         &kp F  &kp G            &kp H      &J4        &K5            &L6    &kp SEMICOLON  &mt RIGHT_CONTROL SINGLE_QUOTE
-&kp LSHFT             &kp Z  &kp X  &kp C         &kp V  &kp B            &kp N      &M7        &COMMA8        &DOT9  &slash0        &kp RIGHT_SHIFT
+&kp ESCAPE            &kp Q  &kp W  &kp E         &kp R  &kp T            &kp Y      &U1        &I2            &O3    &P0            &mt RIGHT_ALT GRAVE
+&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D         &kp F  &kp G            &HH        &J4        &K5            &L6    &kp SEMICOLON  &mt RIGHT_CONTROL SINGLE_QUOTE
+&kp LSHFT             &kp Z  &kp X  &kp C         &kp V  &kp B            &kp N      &M7        &COMMA8        &DOT9  &kp SLASH      &kp RIGHT_SHIFT
                                     &kp LEFT_GUI  &mo 1  &kp BACKSPACE    &kp ENTER  &kp SPACE  &kp RIGHT_GUI
             >;
         };
@@ -140,35 +149,13 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE        &kp EXCL       &kp AT_SIGN  &kp UP    &kp DOLLAR  &kp HASH       &kp PIPE        &kp AMPERSAND  &kp LBRC              &kp RIGHT_BRACE        &kp LBKT      &mt RIGHT_ALT RIGHT_BRACKET
-&kp LEFT_CONTROL  &kp N0         &kp LEFT     &kp DOWN  &kp RIGHT   &kp PERCENT    &kp STAR        &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &mt RIGHT_CONTROL DOUBLE_QUOTES
-&kp LEFT_SHIFT    &kp BACKSLASH  &none        &none     &none       &kp CARET      &kp PLUS        &kp MINUS      &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
-                                              &none     &none       &mo 4          &kp UNDERSCORE  &kp SPACE      &kp RIGHT_GUI
+&kp LEFT_ALT      &kp EXCL       &kp AT_SIGN  &kp UP    &kp HASH   &kp DOLLAR     &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT      &mt RIGHT_ALT RIGHT_BRACKET
+&kp LEFT_CONTROL  &kp BACKSLASH  &kp LEFT     &kp DOWN  &kp RIGHT  &kp PERCENT    &kp PLUS       &kp EQUAL       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON     &mt RIGHT_CONTROL DOUBLE_QUOTES
+&kp LEFT_SHIFT    &trans         &none        &none     &none      &kp CARET      &trans         &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
+                                              &none     &none      &mo 2          &kp PIPE       &kp UNDERSCORE  &kp RIGHT_GUI
             >;
 
             label = "SYM";
-        };
-
-        NUMBER {
-            bindings = <
-&mo 3              &none  &none  &none  &none  &none            &none      &kp N1     &kp N2         &kp N3  &none   &none
-&kp RIGHT_CONTROL  &none  &none  &none  &none  &none            &none      &kp N4     &kp N5         &kp N6  &none   &kp RIGHT_CONTROL
-&kp LEFT_SHIFT     &none  &none  &none  &none  &none            &none      &kp N7     &kp N8         &kp N9  &kp N0  &kp RIGHT_SHIFT
-                                 &none  &none  &kp BACKSPACE    &kp ENTER  &kp SPACE  &kp RIGHT_GUI
-            >;
-
-            label = "NUM";
-        };
-
-        Function {
-            bindings = <
-&none           &none  &none  &none  &none  &none            &none      &kp F1     &kp F2  &kp F3  &kp F12  &none
-&kp LCTRL       &none  &none  &none  &none  &none            &none      &kp F4     &kp F5  &kp F6  &kp F11  &kp RIGHT_CONTROL
-&sk LEFT_SHIFT  &none  &none  &none  &none  &none            &none      &kp F7     &kp F8  &kp F9  &kp F10  &kp RIGHT_SHIFT
-                              &none  &none  &kp BACKSPACE    &kp ENTER  &kp SPACE  &none
-            >;
-
-            label = "FUNC";
         };
 
         sys {
