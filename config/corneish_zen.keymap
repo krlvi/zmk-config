@@ -126,6 +126,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        o_uml: o_uml {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_UML";
+            bindings = <&o_>, <&O_>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -155,6 +164,13 @@
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp LS(O)>;
             label = "O_";
+        };
+
+        ao: ao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(A)>;
+            label = "AO";
         };
     };
 
@@ -190,7 +206,7 @@
             bindings = <
 &kp LEFT_ALT      &kp EXCL       &kp AT_SIGN  &kp UP    &kp HASH   &kp DOLLAR     &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT      &mt RIGHT_ALT RIGHT_BRACKET
 &kp LEFT_CONTROL  &kp BACKSLASH  &kp LEFT     &kp DOWN  &kp RIGHT  &kp PERCENT    &kp PLUS       &kp EQUAL       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON     &mt RIGHT_CONTROL DOUBLE_QUOTES
-&kp LEFT_SHIFT    &trans         &a_          &none     &none      &kp CARET      &trans         &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &trans         &a_uml       &o_uml    &ao        &kp CARET      &trans         &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
                                               &none     &none      &mo 2          &kp PIPE       &kp UNDERSCORE  &kp RIGHT_GUI
             >;
 
