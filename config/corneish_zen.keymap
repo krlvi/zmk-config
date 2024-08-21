@@ -117,6 +117,15 @@
             #binding-cells = <0>;
             mods = <(MOD_RGUI)>;
         };
+
+        a_uml: a_uml {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_UML";
+            bindings = <&a_>, <&A_>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -125,6 +134,27 @@
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp A>;
             label = "A_";
+        };
+
+        A_: A_ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(A)>;
+            label = "A_";
+        };
+
+        o_: o_ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp O>;
+            label = "O_";
+        };
+
+        O_: O_ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(O)>;
+            label = "O_";
         };
     };
 
