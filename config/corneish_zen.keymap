@@ -119,6 +119,15 @@
         };
     };
 
+    macros {
+        a_: a_ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp A>;
+            label = "A_";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -151,7 +160,7 @@
             bindings = <
 &kp LEFT_ALT      &kp EXCL       &kp AT_SIGN  &kp UP    &kp HASH   &kp DOLLAR     &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT      &mt RIGHT_ALT RIGHT_BRACKET
 &kp LEFT_CONTROL  &kp BACKSLASH  &kp LEFT     &kp DOWN  &kp RIGHT  &kp PERCENT    &kp PLUS       &kp EQUAL       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON     &mt RIGHT_CONTROL DOUBLE_QUOTES
-&kp LEFT_SHIFT    &trans         &none        &none     &none      &kp CARET      &trans         &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &trans         &a_          &none     &none      &kp CARET      &trans         &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
                                               &none     &none      &mo 2          &kp PIPE       &kp UNDERSCORE  &kp RIGHT_GUI
             >;
 
