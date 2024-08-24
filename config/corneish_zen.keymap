@@ -54,8 +54,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none             &none            &kp AT_SIGN  &kp UP    &kp DOLLAR  &kp HASH       &kp PIPE        &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LBKT      &mt RIGHT_ALT RIGHT_BRACKET
-&kp LEFT_CONTROL  &kp EXCLAMATION  &kp LEFT     &kp DOWN  &kp RIGHT   &kp PERCENT    &kp ASTERISK    &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &kp DOUBLE_QUOTES
+&none             &none            &kp AT_SIGN  &kp UP    &kp DOLLAR  &kp HASH       &kp PIPE        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT      &mt RIGHT_ALT RIGHT_BRACKET
+&kp LEFT_CONTROL  &kp EXCLAMATION  &kp LEFT     &kp DOWN  &kp RIGHT   &kp PERCENT    &kp ASTERISK    &kp EQUAL      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON     &kp DOUBLE_QUOTES
 &kp LEFT_SHIFT    &kp BACKSLASH    &none        &none     &none       &kp CARET      &kp PLUS        &kp MINUS      &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &kp RIGHT_SHIFT
                                                 &none     &none       &mo 3          &kp UNDERSCORE  &kp SPACE      &kp RIGHT_GUI
             >;
