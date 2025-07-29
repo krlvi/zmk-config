@@ -95,8 +95,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans           &trans       &trans    &trans      &trans         &kp CARET      &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp BACKSLASH  &kp MINUS       &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET      &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans           &trans       &trans    &trans      &trans         &kp BACKSLASH  &kp MINUS       &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
 &trans  &trans           &trans       &trans    &trans      &trans         &kp PIPE       &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
                                       &mo 3     &trans      &trans         &trans         &trans          &trans
             >;
